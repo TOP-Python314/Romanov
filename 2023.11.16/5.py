@@ -3,7 +3,7 @@
 
 mile = int(input('Введите целую часть миль: '))
 mile_1 = int(input('Введите десятичную часть миль: '))
-print(f'{mile + mile_1 / 10}', 'миль =', round(((mile + mile_1 / 10) * 1.61), 1), 'км')
+print(f'{mile + mile_1 / 10} миль = {round(((mile + mile_1 / 10) * 1.61), 1)} км')
 
 # Ввод:
 
