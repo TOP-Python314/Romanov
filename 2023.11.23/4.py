@@ -2,20 +2,10 @@
 
 xy = input('Введите координаты: ')
 xy1 = input('Введите координаты: ')
-xy = list(xy)
-xy1 = list(xy1)
 
-if xy[0] == 'a' or xy[0] == 'c'or xy[0] == 'e' or xy[0] == 'g': 
-    xy[0] = 1
-else: xy[0] = 0
-
-if xy1[0] == 'a' or xy1[0] == 'c'or xy1[0] == 'e' or xy1[0] == 'g': 
-    xy1[0] = 1
-else: xy1[0] = 0
-
-if (((xy[0] + int(xy[1])) % 2 == 0) and ((xy1[0] + int(xy1[1])) % 2 == 0)):
+if (((ord(xy[0]) + int(xy[1])) % 2 == 0) and ((ord(xy1[0]) + int(xy1[1])) % 2 == 0)):
     print('да')
-elif (((xy[0] + int(xy[1])) % 2 != 0) and ((xy1[0] + int(xy1[1])) % 2 != 0)):
+elif (((ord(xy[0]) + int(xy[1])) % 2 != 0) and ((ord(xy1[0]) + int(xy1[1])) % 2 != 0)):
     print('да')
 else: 
     print('нет')
