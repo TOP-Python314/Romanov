@@ -1,4 +1,4 @@
-n = int(input('>Введите целое число: '))
+n = abs(int(input('>Введите целое число: ')))
 sum = n
 for i in range(1, n//2 + 1):
         if n % i == 0:
